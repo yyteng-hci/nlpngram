@@ -1,10 +1,12 @@
 # ngram model
-This project builds a trigram language model, which is then applied to a text classification task to evaluate ETS TOEFL essays. The probability distributions are not pre-computed, instead, the model stores the raw counts of ngram occurrences and computes probabilities on demand. The model is evaluated using perplexity on an entire corpus. The perplexity is defined as $$2^{-l}$$
-Where $l$ is defined as 
+This project builds a trigram language model, which is then applied to a text classification task to evaluate ETS TOEFL essays. The probability distributions are not pre-computed, instead, the model stores the raw counts of ngram occurrences and computes probabilities on demand. The model is evaluated using perplexity on an entire corpus. The project is composed of the following parts: 
+- extract ngrams from a sentence
+- counting ngram in a corpus
+- raw ngram probabilities
+- smoothed probabilities
+- computing sentence probability
+- perplexity
 
-$$l = 1/M \sum_{i=1}^{m} log p(S_i)$$
-
-$M$ is the total number of words. To compute the perpplexity, sum the log probability for each sentence and divide by $M$ in the corpus. 
 
 
 ## Usage 
