@@ -4,6 +4,8 @@ Where $l$ is defined as
 
 $$l = 1/M \sum_{i=1}^{m} log p(S_i)$$
 
+$M$ is the total number of words. To compute the perpplexity, sum the log probability for each sentence and divide by $M$ in the corpus. 
+
 
 ## Usage 
 ```python
